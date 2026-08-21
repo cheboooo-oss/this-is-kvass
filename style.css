@@ -554,3 +554,45 @@ h1{font-size:clamp(3.8rem,7.3vw,8rem);line-height:.9}
   object-fit: cover;
   display: block;
 }
+.hero-picture {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.bread-character {
+  position: absolute;
+  width: 18%;
+  right: 12%;
+  top: 45%;
+  animation: breadMove 5s ease-in-out infinite;
+}
+
+@keyframes breadMove {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-20px, -8px) rotate(-3deg);
+  }
+
+  50% {
+    transform: translate(-40px, 4px) rotate(2deg);
+  }
+
+  75% {
+    transform: translate(-15px, -6px) rotate(-2deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
